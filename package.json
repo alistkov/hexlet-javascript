@@ -1,0 +1,17 @@
+{
+  "name": "hexlet-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {  },
+  "keywords": [
+    "hexlet",
+    "js",
+    "javascript",
+    "frontend",
+    "nodejs"
+  ],
+  "author": "Anton Listkov",
+  "license": "MIT"
+}
