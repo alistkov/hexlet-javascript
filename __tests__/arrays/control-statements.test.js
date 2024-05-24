@@ -1,11 +1,11 @@
-import { describe, it, expect } from '@jest/globals'
-import getTotalAmount from '../../src/arrays/control-statements.js'
+import { describe, it, expect } from '@jest/globals';
+import getTotalAmount from '../../src/arrays/control-statements.js';
 
 describe('getTotalAmount', () => {
   it('#test 1', () => {
-    const money = ['eur 10', 'usd 1', 'usd 10', 'rub 50', 'usd 5']
-    expect(getTotalAmount(money, 'usd')).toBe(16)
-  })
+    const money = ['eur 10', 'usd 1', 'usd 10', 'rub 50', 'usd 5'];
+    expect(getTotalAmount(money, 'usd')).toBe(16);
+  });
 
   it('#test 2', () => {
     const money = [
@@ -15,10 +15,10 @@ describe('getTotalAmount', () => {
       'rub 100',
       'eur 20',
       'eur 100',
-      'rub 200'
-    ]
-    expect(getTotalAmount(money, 'eur')).toBe(135)
-  })
+      'rub 200',
+    ];
+    expect(getTotalAmount(money, 'eur')).toBe(135);
+  });
 
   it('#test 3', () => {
     const money = [
@@ -28,8 +28,8 @@ describe('getTotalAmount', () => {
       'rub 10',
       'rub 10',
       'eur 100',
-      'rub 200'
-    ]
-    expect(getTotalAmount(money, 'rub')).toBe(270)
-  })
-})
+      'rub 200',
+    ];
+    expect(getTotalAmount(money, 'rub')).toBe(270);
+  });
+});

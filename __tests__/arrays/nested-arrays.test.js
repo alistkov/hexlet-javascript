@@ -1,5 +1,5 @@
-import { describe, expect, it } from '@jest/globals'
-import getSuperSeriesWinner from '../../src/arrays/nested-arrays.js'
+import { describe, expect, it } from '@jest/globals';
+import getSuperSeriesWinner from '../../src/arrays/nested-arrays.js';
 
 describe('getSuperSeriesWinner', () => {
   it('canada', () => {
@@ -11,12 +11,12 @@ describe('getSuperSeriesWinner', () => {
       [4, 5],
       [3, 2],
       [4, 3],
-      [6, 5]
-    ]
+      [6, 5],
+    ];
 
-    const result = getSuperSeriesWinner(scores)
-    expect(result).toBe('canada')
-  })
+    const result = getSuperSeriesWinner(scores);
+    expect(result).toBe('canada');
+  });
 
   it('ussr', () => {
     const scores = [
@@ -27,12 +27,12 @@ describe('getSuperSeriesWinner', () => {
       [2, 3],
       [2, 5],
       [4, 4],
-      [2, 3]
-    ]
+      [2, 3],
+    ];
 
-    const result = getSuperSeriesWinner(scores)
-    expect(result).toBe('ussr')
-  })
+    const result = getSuperSeriesWinner(scores);
+    expect(result).toBe('ussr');
+  });
 
   it('draw', () => {
     const scores = [
@@ -43,10 +43,10 @@ describe('getSuperSeriesWinner', () => {
       [2, 2],
       [2, 4],
       [4, 2],
-      [2, 4]
-    ]
+      [2, 4],
+    ];
 
-    const result = getSuperSeriesWinner(scores)
-    expect(result).toBeNull()
-  })
-})
+    const result = getSuperSeriesWinner(scores);
+    expect(result).toBeNull();
+  });
+});

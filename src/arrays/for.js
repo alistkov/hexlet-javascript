@@ -1,9 +1,9 @@
 const addPrefix = (collection, prefix) => {
-  const result = []
+  const result = [];
   for (let i = 0; i < collection.length; i += 1) {
-    result[i] = `${prefix} ${collection[i]}`
+    result[i] = `${prefix} ${collection[i]}`;
   }
-  return result
-}
+  return result;
+};
 
-export default addPrefix
+export default addPrefix;

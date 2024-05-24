@@ -2,13 +2,13 @@
 /* eslint no-restricted-syntax: ["off", "ForOfStatement"] */
 export const getMax = (numbers) => {
   if (numbers.length === 0) {
-    return null
+    return null;
   }
-  let [max, ...rest] = numbers
+  let [max, ...rest] = numbers;
   for (const number of rest) {
     if (number > max) {
-      max = number
+      max = number;
     }
   }
-  return max
-}
+  return max;
+};

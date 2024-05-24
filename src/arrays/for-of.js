@@ -1,14 +1,14 @@
 /* eslint no-restricted-syntax: ["off", "ForOfStatement"] */
 const calculateAverage = (collection) => {
   if (collection.length === 0) {
-    return null
+    return null;
   }
 
-  let sum = 0
+  let sum = 0;
   for (const item of collection) {
-    sum += item
+    sum += item;
   }
-  return sum / collection.length
-}
+  return sum / collection.length;
+};
 
-export default calculateAverage
+export default calculateAverage;
