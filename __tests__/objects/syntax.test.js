@@ -1,5 +1,5 @@
-import { test, expect } from '@jest/globals'
-import getJsonFileData from '../../src/objects/syntax.js'
+import { test, expect } from '@jest/globals';
+import getJsonFileData from '../../src/objects/syntax.js';
 
 test('getJsonFileData', () => {
   expect(JSON.stringify(getJsonFileData())).toEqual(
@@ -7,5 +7,5 @@ test('getJsonFileData', () => {
       file: 'src/objects.js',
       config: true,
     })
-  )
-})
+  );
+});
