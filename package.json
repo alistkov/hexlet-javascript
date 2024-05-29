@@ -22,6 +22,7 @@
     "**/*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
+    "crc-32": "https://cdn.sheetjs.com/crc-32-latest/crc-32-latest.tgz",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
