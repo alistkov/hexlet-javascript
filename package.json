@@ -1,0 +1,26 @@
+{
+  "name": "hexlet-javascript",
+  "version": "1.0.0",
+  "description": "Hexlet JavaScript profession",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alistkov/hexlet-javascript.git"
+  },
+  "keywords": [
+    "hexlet",
+    "js",
+    "javascript",
+    "frontend",
+    "node"
+  ],
+  "author": "Anton Listkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alistkov/hexlet-javascript/issues"
+  },
+  "homepage": "https://github.com/alistkov/hexlet-javascript#readme"
+}
