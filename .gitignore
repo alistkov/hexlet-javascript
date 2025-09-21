@@ -9,12 +9,6 @@ yarn-error.log*
 
 # Runtime data
 .eslintcache
-.next/ # For Next.js projects
-.nuxt/ # For Nuxt.js projects
-.svelte-kit/ # For SvelteKit projects
-dist/ # Common build output directory
-build/ # Another common build output directory
-out/ # Another common build output directory
 
 # Environment variables
 .env
@@ -24,7 +18,6 @@ out/ # Another common build output directory
 .env.production.local
 
 # IDE and OS specific files
-.vscode/
 .idea/
 .DS_Store
 Thumbs.db
