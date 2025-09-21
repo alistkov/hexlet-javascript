@@ -4,7 +4,7 @@
   "description": "Hexlet JavaScript profession",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/alistkov/hexlet-javascript/issues"
   },
-  "homepage": "https://github.com/alistkov/hexlet-javascript#readme"
+  "homepage": "https://github.com/alistkov/hexlet-javascript#readme",
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  }
 }
