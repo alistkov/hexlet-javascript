@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { getMidpoint } from '../../src/data-abstraction/arrays'
+import { getMidpoint } from '../../src/data-abstraction/arrays.js'
 
 it('get segment mid point 1', () => {
   const point1 = { x: 0, y: 0 }

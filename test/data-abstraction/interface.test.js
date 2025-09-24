@@ -1,7 +1,7 @@
 import { expect, it } from 'vitest'
 
-import { makePoint } from '../../src/data-abstraction/interface'
-import { isParallelWithX, isParallelWithY, makeSegment } from '../../src/data-abstraction/segment'
+import { makePoint } from '../../src/data-abstraction/interface.js'
+import { isParallelWithX, isParallelWithY, makeSegment } from '../../src/data-abstraction/segment.js'
 
 it('segment', () => {
   const point1 = makePoint(3, 2)

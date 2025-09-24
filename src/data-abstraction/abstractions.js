@@ -1,4 +1,4 @@
-import { getX, getY, makeDecartPoint } from './points'
+import { getX, getY, makeDecartPoint } from './points.js'
 
 export function makeSegment(beginPoint, endPoint) {
   return {

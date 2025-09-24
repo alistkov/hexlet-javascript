@@ -1,4 +1,4 @@
-import { getX, getY } from './interface'
+import { getX, getY } from './interface.js'
 
 function makeSegment(point1, point2) {
   const segment = { beginPoint: point1, endPoint: point2 }

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
-import { getBeginPoint, getEndPoint, getMidpointOfSegment, makeSegment } from '../../src/data-abstraction/abstractions'
-import { makeDecartPoint } from '../../src/data-abstraction/points'
+import { getBeginPoint, getEndPoint, getMidpointOfSegment, makeSegment } from '../../src/data-abstraction/abstractions.js'
+import { makeDecartPoint } from '../../src/data-abstraction/points.js'
 
 describe('segment', () => {
   it('get begin & end points', () => {
