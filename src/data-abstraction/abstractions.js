@@ -24,3 +24,17 @@ export function getMidpointOfSegment(segment) {
 
   return makeDecartPoint(x, y)
 }
+
+export function isParallelWithX(segment) {
+  const beginPoint = getBeginPoint(segment)
+  const endPoint = getEndPoint(segment)
+
+  return getY(beginPoint) === getY(endPoint)
+}
+
+export function isParallelWithY(segment) {
+  const beginPoint = getBeginPoint(segment)
+  const endPoint = getEndPoint(segment)
+
+  return getX(beginPoint) === getX(endPoint)
+}
