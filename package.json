@@ -1,5 +1,6 @@
 {
   "name": "hexlet-javascript",
+  "type": "module",
   "version": "1.0.0",
   "description": "Hexlet JavaScript profession",
   "author": "Anton Listkov",
