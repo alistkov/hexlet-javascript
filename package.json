@@ -6,11 +6,16 @@
   "author": "Anton Listkov",
   "type": "module",
   "main": "src/index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
+    "@vitest/coverage-v8": "^4.1.5",
     "eslint": "^10.2.1",
-    "globals": "^17.5.0"
+    "globals": "^17.5.0",
+    "vitest": "^4.1.5"
   }
 }
