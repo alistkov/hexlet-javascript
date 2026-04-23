@@ -1,0 +1,12 @@
+{
+  "name": "hexlet-node",
+  "version": "1.0.0",
+  "description": "Hexlet Hode.js developer profession",
+  "license": "ISC",
+  "author": "Anton Listkov",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
