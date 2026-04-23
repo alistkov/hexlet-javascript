@@ -6,10 +6,7 @@
   "author": "Anton Listkov",
   "type": "module",
   "main": "src/index.js",
-  "scripts": {
-    "lint": "npx eslint ./src",
-    "lint:fix": "npx eslint ./src --fix"
-  },
+  "scripts": {},
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
