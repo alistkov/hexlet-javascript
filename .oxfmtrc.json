@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "ignorePatterns": [
+    "**/node_modules/**",
+    "**/npm-cache/**",
+    "**/vendor/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/coverage/**",
+    "**/.venv/**",
+    "**/__snapshots__/**"
+  ],
+  "singleQuote": true,
+  "printWidth": 80,
+  "sortImports": true,
+  "arrowParens": "always"
+}

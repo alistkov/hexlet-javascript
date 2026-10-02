@@ -12,6 +12,18 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "oxlint && oxfmt --check",
+    "lint:fix": "oxfmt && oxlint --fix"
+  },
+  "devDependencies": {
+    "lint-staged": "^17.6.0",
+    "oxfmt": "^0.71.0",
+    "oxlint": "^1.86.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "oxfmt",
+      "oxlint --fix"
+    ]
   }
 }
