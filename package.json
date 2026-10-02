@@ -1,0 +1,17 @@
+{
+  "name": "hexlet-nodejs",
+  "version": "1.0.0",
+  "description": "Hexlet Node.js profession",
+  "keywords": [
+    "hexlet",
+    "js",
+    "nodejs"
+  ],
+  "license": "MIT",
+  "author": "Anton Listkov",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
