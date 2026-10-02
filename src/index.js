@@ -1,1 +1,1 @@
-const sum = (a, b) => a + b;
+console.log('Node.js profession');

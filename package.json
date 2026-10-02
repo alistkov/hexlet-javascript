@@ -10,15 +10,17 @@
   "license": "MIT",
   "author": "Anton Listkov",
   "type": "module",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "lint": "oxlint && oxfmt --check",
-    "lint:fix": "oxfmt && oxlint --fix"
+    "lint:fix": "oxfmt && oxlint --fix",
+    "test": "vitest"
   },
   "devDependencies": {
     "lint-staged": "^17.6.0",
     "oxfmt": "^0.71.0",
-    "oxlint": "^1.86.0"
+    "oxlint": "^1.86.0",
+    "vitest": "^5.0.3"
   },
   "lint-staged": {
     "*.js": [
