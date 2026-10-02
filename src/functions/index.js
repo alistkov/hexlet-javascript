@@ -13,3 +13,12 @@ export function truncate(text, length) {
 export function getHiddenCard(cardNumber, starsCount = 4) {
   return '*'.repeat(starsCount) + cardNumber.slice(-4);
 }
+
+/**
+ * @param {string} text
+ * @param {int} count
+ * @returns {string}
+ */
+export function wordMultiply(text, count) {
+  return text.repeat(count);
+}

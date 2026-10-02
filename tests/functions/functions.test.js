@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
 
-import { truncate, getHiddenCard } from '../../src/functions';
+import { truncate, getHiddenCard, wordMultiply } from '../../src/functions';
 
 describe('test exercises in function track', () => {
   test('return [truncate]', () => {
@@ -12,5 +12,10 @@ describe('test exercises in function track', () => {
   test('default parameters [getHiddenCard]', () => {
     expect(getHiddenCard('1234567890123456')).toBe('****3456');
     expect(getHiddenCard('1234567890123456', 2)).toBe('**3456');
+  });
+
+  test('type annotations [wordMultiply]', () => {
+    expect(wordMultiply('=', 4)).toBe('====');
+    expect(wordMultiply('=', 0)).toBe('');
   });
 });
