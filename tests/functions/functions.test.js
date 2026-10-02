@@ -1,6 +1,11 @@
 import { describe, expect, test } from 'vitest';
 
-import { truncate, getHiddenCard, wordMultiply } from '../../src/functions';
+import {
+  truncate,
+  getHiddenCard,
+  wordMultiply,
+  capitalize,
+} from '../../src/functions';
 
 describe('test exercises in function track', () => {
   test('return [truncate]', () => {
@@ -17,5 +22,10 @@ describe('test exercises in function track', () => {
   test('type annotations [wordMultiply]', () => {
     expect(wordMultiply('=', 4)).toBe('====');
     expect(wordMultiply('=', 0)).toBe('');
+  });
+
+  test('define short syntax [capitalize]', () => {
+    expect(capitalize('hello')).toBe('Hello');
+    expect(capitalize('')).toBe('');
   });
 });

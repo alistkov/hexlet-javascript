@@ -22,3 +22,10 @@ export function getHiddenCard(cardNumber, starsCount = 4) {
 export function wordMultiply(text, count) {
   return text.repeat(count);
 }
+
+/**
+ * @param {string} text
+ * @returns {string}
+ */
+export const capitalize = (text) =>
+  text.slice(0, 1).toUpperCase() + text.slice(1);
