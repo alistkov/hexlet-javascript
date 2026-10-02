@@ -1,4 +1,9 @@
-export function truncate(text, length) {
+/**
+ * @param {string} text
+ * @param {int} length
+ * @returns {string}
+ */
+export const truncate = (text, length) => {
   if (length > text.length) {
     return text;
   }
@@ -8,20 +13,22 @@ export function truncate(text, length) {
   }
 
   return text.slice(0, length) + '...';
-}
+};
 
-export function getHiddenCard(cardNumber, starsCount = 4) {
-  return '*'.repeat(starsCount) + cardNumber.slice(-4);
-}
+/**
+ * @param {string} cardNumber
+ * @param {number} [starsCount=4]
+ * @returns {string}
+ */
+export const getHiddenCard = (cardNumber, starsCount = 4) =>
+  '*'.repeat(starsCount) + cardNumber.slice(-4);
 
 /**
  * @param {string} text
  * @param {int} count
  * @returns {string}
  */
-export function wordMultiply(text, count) {
-  return text.repeat(count);
-}
+export const wordMultiply = (text, count) => text.repeat(count);
 
 /**
  * @param {string} text
