@@ -14,16 +14,18 @@
   "scripts": {
     "lint": "oxlint && oxfmt --check",
     "lint:fix": "oxfmt && oxlint --fix",
-    "test": "vitest"
+    "test": "vitest",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
     "oxfmt": "^0.71.0",
     "oxlint": "^1.86.0",
     "vitest": "^5.0.3"
   },
   "lint-staged": {
-    "*.js": [
+    "*.{js,ts}": [
       "oxfmt",
       "oxlint --fix"
     ]
