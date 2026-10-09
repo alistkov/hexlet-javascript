@@ -2,6 +2,7 @@ import { describe, expect, test } from 'vitest';
 
 import {
   isInternationalPhone,
+  isLeapYear,
   isLongWord,
   isPensioner,
 } from '../../src/conditional-statements';
@@ -21,5 +22,12 @@ describe('test exercises in conditional statements track', () => {
   test('combine expressions [isInternationalPhone]', () => {
     expect(isInternationalPhone('+381123456')).toBeTruthy();
     expect(isInternationalPhone('98213123123')).toBeFalsy();
+  });
+
+  test('logical operators [isLeapYear]', () => {
+    expect(isLeapYear(2024)).toBeTruthy();
+    expect(isLeapYear(2000)).toBeTruthy();
+    expect(isLeapYear(1900)).toBeFalsy();
+    expect(isLeapYear(2023)).toBeFalsy();
   });
 });
