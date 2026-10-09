@@ -10,3 +10,10 @@ export const isLeapYear = (year) => {
   }
   return false;
 };
+
+export const isPalindrome = (word) => {
+  const formated = word.toLowerCase();
+  return formated.split('').reverse().join('') === formated;
+};
+
+export const isNotPalindrome = (word) => !isPalindrome(word);

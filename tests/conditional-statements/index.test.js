@@ -4,6 +4,8 @@ import {
   isInternationalPhone,
   isLeapYear,
   isLongWord,
+  isNotPalindrome,
+  isPalindrome,
   isPensioner,
 } from '../../src/conditional-statements';
 
@@ -29,5 +31,21 @@ describe('test exercises in conditional statements track', () => {
     expect(isLeapYear(2000)).toBeTruthy();
     expect(isLeapYear(1900)).toBeFalsy();
     expect(isLeapYear(2023)).toBeFalsy();
+  });
+
+  describe('logical negation', () => {
+    test('[isPalindrome]', () => {
+      expect(isPalindrome('level')).toBeTruthy();
+      expect(isPalindrome('Wow')).toBeTruthy();
+      expect(isPalindrome('palindrome')).toBeFalsy();
+      expect(isPalindrome('ReGister')).toBeFalsy();
+    });
+
+    test('[isNotPalindrome]', () => {
+      expect(isNotPalindrome('level')).toBeFalsy();
+      expect(isNotPalindrome('Wow')).toBeFalsy();
+      expect(isNotPalindrome('palindrome')).toBeTruthy();
+      expect(isNotPalindrome('ReGister')).toBeTruthy();
+    });
   });
 });
