@@ -10,6 +10,7 @@ import {
   isPalindrome,
   isPensioner,
   normalizeUrl,
+  getTrafficLightAction,
 } from '../../src/conditional-statements';
 
 describe('test exercises in conditional statements track', () => {
@@ -67,5 +68,12 @@ describe('test exercises in conditional statements track', () => {
   test('if-else [normalizeUrl]', () => {
     expect(normalizeUrl('https://google.com')).toBe('https://google.com');
     expect(normalizeUrl('google.com')).toBe('https://google.com');
+  });
+
+  test('else-if [getTrafficLightAction]', () => {
+    expect(getTrafficLightAction('green')).toBe('go');
+    expect(getTrafficLightAction('yellow')).toBe('slow down');
+    expect(getTrafficLightAction('red')).toBe('stop');
+    expect(getTrafficLightAction('blue')).toBe('unknown');
   });
 });

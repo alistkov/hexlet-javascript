@@ -24,3 +24,10 @@ export const guessNumber = (guess) => (guess == 42 ? 'You win!' : 'Try again!');
 
 export const normalizeUrl = (url) =>
   url.startsWith('https') ? url : `https://${url}`;
+
+export const getTrafficLightAction = (color) => {
+  if (color === 'green') return 'go';
+  if (color === 'yellow') return 'slow down';
+  if (color === 'red') return 'stop';
+  return 'unknown';
+};
