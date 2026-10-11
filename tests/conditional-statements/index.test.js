@@ -9,6 +9,7 @@ import {
   isNotPalindrome,
   isPalindrome,
   isPensioner,
+  normalizeUrl,
 } from '../../src/conditional-statements';
 
 describe('test exercises in conditional statements track', () => {
@@ -58,8 +59,13 @@ describe('test exercises in conditional statements track', () => {
     expect(getLetter('word', -1)).toBe('');
   });
 
-  test('[guessNumber]', () => {
+  test('if [guessNumber]', () => {
     expect(guessNumber(42)).toBe('You win!');
     expect(guessNumber(12)).toBe('Try again!');
+  });
+
+  test('if-else [normalizeUrl]', () => {
+    expect(normalizeUrl('https://google.com')).toBe('https://google.com');
+    expect(normalizeUrl('google.com')).toBe('https://google.com');
   });
 });
