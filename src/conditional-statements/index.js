@@ -33,3 +33,16 @@ export const getTrafficLightAction = (color) => {
 };
 
 export const flipFlop = (status) => (status === 'flip' ? 'flop' : 'flip');
+
+export const getNumberExplanation = (number) => {
+  switch (number) {
+    case 7:
+      return 'prime number';
+    case 42:
+      return 'answer for everything';
+    case 666:
+      return 'devil number';
+    default:
+      return 'just a number';
+  }
+};

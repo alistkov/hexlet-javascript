@@ -12,6 +12,7 @@ import {
   normalizeUrl,
   getTrafficLightAction,
   flipFlop,
+  getNumberExplanation,
 } from '../../src/conditional-statements';
 
 describe('test exercises in conditional statements track', () => {
@@ -81,5 +82,12 @@ describe('test exercises in conditional statements track', () => {
   test('ternary operator [flipFlop]', () => {
     expect(flipFlop('flip')).toBe('flop');
     expect(flipFlop('flop')).toBe('flip');
+  });
+
+  test('switch [getNumberExplanation]', () => {
+    expect(getNumberExplanation(7)).toBe('prime number');
+    expect(getNumberExplanation(42)).toBe('answer for everything');
+    expect(getNumberExplanation(8)).toBe('just a number');
+    expect(getNumberExplanation(666)).toBe('devil number');
   });
 });
