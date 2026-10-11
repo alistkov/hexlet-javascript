@@ -17,3 +17,5 @@ export const isPalindrome = (word) => {
 };
 
 export const isNotPalindrome = (word) => !isPalindrome(word);
+
+export const getLetter = (word, position) => word[position - 1] ?? '';

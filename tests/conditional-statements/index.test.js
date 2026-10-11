@@ -1,6 +1,7 @@
 import { describe, expect, test } from 'vitest';
 
 import {
+  getLetter,
   isInternationalPhone,
   isLeapYear,
   isLongWord,
@@ -47,5 +48,12 @@ describe('test exercises in conditional statements track', () => {
       expect(isNotPalindrome('palindrome')).toBeTruthy();
       expect(isNotPalindrome('ReGister')).toBeTruthy();
     });
+  });
+
+  test('logical expressions [getLetter]', () => {
+    expect(getLetter('word', 0)).toBe('');
+    expect(getLetter('word', 2)).toBe('o');
+    expect(getLetter('word', 10)).toBe('');
+    expect(getLetter('word', -1)).toBe('');
   });
 });
