@@ -31,3 +31,5 @@ export const getTrafficLightAction = (color) => {
   if (color === 'red') return 'stop';
   return 'unknown';
 };
+
+export const flipFlop = (status) => (status === 'flip' ? 'flop' : 'flip');

@@ -11,6 +11,7 @@ import {
   isPensioner,
   normalizeUrl,
   getTrafficLightAction,
+  flipFlop,
 } from '../../src/conditional-statements';
 
 describe('test exercises in conditional statements track', () => {
@@ -75,5 +76,10 @@ describe('test exercises in conditional statements track', () => {
     expect(getTrafficLightAction('yellow')).toBe('slow down');
     expect(getTrafficLightAction('red')).toBe('stop');
     expect(getTrafficLightAction('blue')).toBe('unknown');
+  });
+
+  test('ternary operator [flipFlop]', () => {
+    expect(flipFlop('flip')).toBe('flop');
+    expect(flipFlop('flop')).toBe('flip');
   });
 });
