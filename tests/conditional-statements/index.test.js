@@ -2,6 +2,7 @@ import { describe, expect, test } from 'vitest';
 
 import {
   getLetter,
+  guessNumber,
   isInternationalPhone,
   isLeapYear,
   isLongWord,
@@ -55,5 +56,10 @@ describe('test exercises in conditional statements track', () => {
     expect(getLetter('word', 2)).toBe('o');
     expect(getLetter('word', 10)).toBe('');
     expect(getLetter('word', -1)).toBe('');
+  });
+
+  test('[guessNumber]', () => {
+    expect(guessNumber(42)).toBe('You win!');
+    expect(guessNumber(12)).toBe('Try again!');
   });
 });

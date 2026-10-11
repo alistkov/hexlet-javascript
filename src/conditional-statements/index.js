@@ -19,3 +19,5 @@ export const isPalindrome = (word) => {
 export const isNotPalindrome = (word) => !isPalindrome(word);
 
 export const getLetter = (word, position) => word[position - 1] ?? '';
+
+export const guessNumber = (guess) => (guess == 42 ? 'You win!' : 'Try again!');
